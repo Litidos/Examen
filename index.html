@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Litio en Chile: No todo lo que brilla es oro</title>
+    <style>
+        .carousel-open:checked + .carousel-item {
+				position: static;
+				opacity: 100;
+			}
+			.carousel-item {
+				-webkit-transition: opacity 0.3s ease-out;
+				transition: opacity 0.3s ease-out;
+			}
+			#carousel-1:checked ~ .control-1,
+			#carousel-2:checked ~ .control-2,
+			#carousel-3:checked ~ .control-3 {
+				display: block;
+			}
+			.carousel-indicators {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				position: absolute;
+				bottom: 2%;
+				left: 0;
+				right: 0;
+				text-align: center;
+				z-index: 10;
+			}
+			#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+			#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+			#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+				color: #FEF9C3;  /*Set to match the Tailwind colour you want the active one to be */
+			}
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;600;700;900&display=swap');
+    </style> 
+    <link rel="stylesheet" href="build/tailwind.css">
+</head>
+
+<body class="bg-yellow-100">
+<div class="bg-yellow-100">
+    <img class="object-cover h-96 w-full" src="imgs/hero-shot.png">
+</div>
+<div class="transform -translate-y-32 bg-yellow-100 mx-auto my-10 px-10 md:px-24 2xl:px-96 xl:mx-20 font-slab text-gray-800 ">
+    <!-- Titulo -->
+    <div class=" px-10 pt-3 mt-10 mx-auto">
+        <h1 class="font-black text-center ">CONFLICTOS SOCIOMEDIOAMBIENTALES</h1>
+        <div class="py-4">
+            <h1 class="text-7xl text-center font-semibold">Litio en Chile:</h1>
+        </div>
+        <p class="text-4xl text-center font-light">No todo lo que brilla es oro.</p>
+        <p class="text-center mt-6 font-light text-sm">Por: Antonia Adell, Ignacio Agurto y Fernando Gajardo</p>
+    </div>
+    <!-- Que es -->
+    <div class=" bg-hero mx-auto mt-10">
+        <p class="font-semibold text-lg">¿Qué es el Litio?</p>
+        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum purus at lacinia vestibulum.
+             Sed luctus augue vitae leo condimentum laoreet. Etiam a diam sed nunc accumsan laoreet. Aenean sit amet elit at ipsum pulvinar pulvinar. 
+             Pellentesque id metus quis enim finibus lobortis id sed mauris. Aliquam mollis sagittis eleifend. Aenean et est sed magna tempor cursus a non tortor. </p>
+    </div>
+    <!-- Mapa -->
+    <div class="mx-auto">
+        <img src="imgs/Mapa Salares.png" alt="mapa del norte de Chile" class="mx-auto mt-12">
+    </div>
+    <!-- Como se extrae -->
+    <p class="font-semibold mx-auto mt-10 text-lg">¿Cómo es el proceso de extracción?</p>
+    <!-- Tarjetas -->
+    <div class="hidden lg:grid grid-cols-3 gap-6 mx-auto mt-10 ">
+        <div class="bg-white rounded-lg p-11 shadow-sm bg-opacity-50">
+            <h1 class="text-center font-bold text-7xl mb-10 mt-3 ">1</h1>
+            <img class="mb-10" src="imgs/extraccion.gif" alt="">
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum purus at lacinia vestibulum.
+            Sed luctus augue vitae leo condimentum laoreet. Etiam a diam sed nunc accumsan laoreet. Aenean sit amet elit at ipsum pulvinar pulvinar.
+            </p>
+        </div>
+        <div class="bg-white rounded-lg p-11 shadow-sm bg-opacity-50">
+            <h1 class="text-center font-bold text-7xl mb-10 mt-3 ">2</h1>
+            <img class="-my-9" src="imgs/salmuera.gif " alt="">
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum purus at lacinia vestibulum.
+            Sed luctus augue vitae leo condimentum laoreet. Etiam a diam sed nunc accumsan laoreet. Aenean sit amet elit at ipsum pulvinar pulvinar. 
+            </p>
+        </div>
+        <div class="bg-white rounded-lg p-11 shadow-sm bg-opacity-50">
+            <h1 class="text-center font-bold text-7xl mb-10 mt-3 ">3</h1>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum purus at lacinia vestibulum.
+            Sed luctus augue vitae leo condimentum laoreet. Etiam a diam sed nunc accumsan laoreet. Aenean sit amet elit at ipsum pulvinar pulvinar. 
+            </p>
+        </div>
+    </div>
+
+    <!-- Carrusel -->
+    <div class="carousel relative bg-yellow-100 m-24 lg:hidden ">
+        <div class="carousel-inner relative w-full">
+          <!--Extraccion-->
+            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+            <div class="carousel-item absolute opacity-0" style="height:50vh;">
+                <h1 class="text-center font-bold text-7xl mb-10 mt-3 ">1</h1>
+                <img class="mb-10" src="imgs/extraccion.gif" alt="">
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum purus at lacinia vestibulum.
+                Sed luctus augue vitae leo condimentum laoreet. Etiam a diam sed nunc accumsan laoreet. Aenean sit amet elit at ipsum pulvinar pulvinar.
+                </p>
+            </div>
+            <label for="carousel-3" class="prev control-1 w-10 h-10 -ml-20 md:-ml-20 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-yellow-200 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            <label for="carousel-2" class="next control-1 w-10 h-10 -mr-20 md:-mr-20 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-yellow-200 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+            
+            <!--Salmuera-->
+            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item absolute opacity-0" style="height:50vh;">
+                <h1 class="text-center font-bold text-7xl mb-10 mt-3 ">2</h1>
+                <img class="" src="imgs/salmuera.gif " alt="">
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum purus at lacinia vestibulum.
+                Sed luctus augue vitae leo condimentum laoreet. Etiam a diam sed nunc accumsan laoreet. Aenean sit amet elit at ipsum pulvinar pulvinar. 
+                </p>
+            </div>
+            <label for="carousel-1" class="prev control-2 w-10 h-10 -ml-20 md:-ml-20 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-yellow-200 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            <label for="carousel-3" class="next control-2 w-10 h-10 -mr-20 md:-mr-20 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-yellow-200 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label> 
+            
+            <!--Planta-->
+            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item absolute opacity-0" style="height:50vh;">
+                <h1 class="text-center font-bold text-7xl mb-10 mt-3 ">3</h1>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum purus at lacinia vestibulum.
+                Sed luctus augue vitae leo condimentum laoreet. Etiam a diam sed nunc accumsan laoreet. Aenean sit amet elit at ipsum pulvinar pulvinar. 
+                </p>
+            </div>
+            <label for="carousel-2" class="prev control-3 w-10 h-10 -ml-20 md:-ml-20 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-yellow-200 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            <label for="carousel-1" class="next control-3 w-10 h-10 -mr-20 md:-mr-20 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-yellow-200 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+            
+        </div>
+    </div>
+
+    <!-- Representación salar -->
+    <div class="mx-auto my-10">
+        <img src="imgs/salarAtacama.png" alt="Salar atacama" class="mx-auto mt-12">
+    </div>
+    
+</div>  
+</body>
+</html>
