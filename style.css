@@ -1,0 +1,14 @@
+header#titulo {
+    min-height: 100vh;
+    background-color: var(--mar);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: 100% auto;
+    background-image: url("imgs/hero-shot.png");
+    /* Uso una imagen cuadrada para pantallas más angosta*/
+}
+
+body {
+    text-align: center;
+}
