@@ -1,14 +1,47 @@
-header#titulo {
-    min-height: 100vh;
-    background-color: var(--mar);
+html,
+body {
+    min-height: 100%;
+    color: #000;
+    background-color: #fff;
+    background-position: center bottom;
+    background-size: 100% auto;
+    background-image: url("imgs/litio-final.jpg");
+    background-repeat: no-repeat;
+
+}
+
+body::-webkit-scrollbar {
+    width: 0.618rem;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #BFBAB5;
+}
+
+
+header#titular {
+    min-height: 80vh;
+    background-color: white;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position: center top;
-    background-size: 100% auto;
-    background-image: url("imgs/hero-shot.png");
+    background-position: center bottom;
+    background-size: cover;
+    background-image: url("imgs/litio.jpg");
     /* Uso una imagen cuadrada para pantallas más angosta*/
 }
 
-body {
-    text-align: center;
+header#titular div.container {
+    height: 80vh; /*  Misma altura que el header */
+}
+
+.card{
+    border:none;
+}
+
+p{
+    text-align: justify;
 }
