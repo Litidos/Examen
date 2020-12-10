@@ -3,10 +3,10 @@ html,
 body {
     min-height: 100%;
     color: #000;
-    background-color: #fff;
+    background-color: #fef3c7;
     background-position: center bottom;
     background-size: 100% auto;
-    background-image: url("imgs/litio-final.jpg");
+
     background-repeat: no-repeat;
 
 }
@@ -20,13 +20,13 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #BFBAB5;
+    background-color: #fef3c7;
 }
 
 
 header#titular {
     min-height: 80vh;
-    background-color: white;
+    background-color:#fef3c7;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center bottom;
@@ -39,14 +39,9 @@ header#titular div.container {
     height: 80vh; /*  Misma altura que el header */
 }
 
-.card{
-    border:none;
-}
-
 p{
     text-align: justify;
 }
-=======
     
 .bg-primary {
     background-color:#fef3c7!important;

@@ -10,7 +10,7 @@
         <title>Litio en Chile: No todo lo que brilla es oro</title>
         <link  rel="icon"   href="imgs/favicon.png" type="image/png" />
         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+	    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
     </head>
 
@@ -28,12 +28,12 @@
             </div>
         </header>
     
-        <!--luego el main, que puede dividirse en varios articles, cada cual con su id-->
-        <main>
+        <!--Cuerpo-->
+        <main role="main">
             <article id="primero" class="py-3">
                 <div class="container">
                     <div class="row">
-                        <div class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 mx-auto">
+                        <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
                             <p class="lead">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend sit amet ante vel iaculis. Nunc viverra vulputate dui, ac egestas est eleifend eu. Duis elit ligula, finibus a mauris sed, semper varius
                                 magna. Suspendisse a luctus nunc.
@@ -46,14 +46,15 @@
                         </div>
                         <div class="col-12 mx-auto my-4">
                             <img src="https://picsum.photos/800/300" class="w-100" alt="..." />
-        
-        <!--Cuerpo-->
-        <main role="main" class="mt-n5">
+                        </div> 
+                    </div>    
+                </div>
+            </article>     
 
             <!-- Que es -->
             <article id="que_es" class="container">
                     <div class="row justify-content-md-center que-es-wrap">
-                        <div class="col-md-auto que-es-inner">
+                        <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
                             <h3 class="titulo">¿Qué es el Litio?</h3>
                             <p class="contenido ">
                                 Es un <strong>metal</strong> que se encuentra principalmente en <strong>salmueras naturales, pegmatitas, pozos petrolíferos, campos geotermales y agua de mar.</strong> En Chile el litio es un mineral estratégico y de interés nacional, <strong>cuya propiedad es exclusiva del Estado</strong>, según lo establecido en el decreto Nº2886 del año 1979.
@@ -65,7 +66,7 @@
             <!-- para que sirve -->
             <article id="para-que" class="container mt-5">
                 <div class="row justify-content-md-center para-que-wrap">
-                    <div class="col-md-auto para-que-inner">
+                    <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
                         <h3 class="titulo">¿Para qué se usa?</h3>
                         <p class="contenido ">
                             Con él se hace el <strong>aluminio</strong> y ayuda a <strong>mejorar las propiedades del vidrio y cerámica</strong> dentro del proceso de fabricación de estas. Además, 
@@ -77,19 +78,31 @@
                     </div>
                 </div>
             </article>
-
+            
             <!-- mapa -->
-            <article id="mapa" class="container my-5">
+            <!-- <article id="mapa" class="container my-5">
                 <div class="row justify-content-md-center mapa-wrap">
                     <div class="col-md-auto mapa-inner">
                         <img src="imgs/Mapa Salares.png" alt="mapa del norte de Chile" class="img-fluid">
                     </div>
                 </div>
+            </article> -->
+
+            <!-- mapa -->
+            <article id="mapa" class="my-5" >
+                <div class="container">
+                    <div class="row justify-content-md-center">
+                        <div id="mapid" class="col-md-auto" style="width: 100vw; height: 100vh;"></div>
+                    </div>
+                </div>
             </article>
 
             <!-- tarjetas -->
+            
             <article id="tarjetas-extracion" class="container my-5">
+                <h3 class="titulo">¿Cómo se extrae?</h3>
                 <div class="card-group tarjetas ">
+                    
                     <!-- Tarjeta 1 -->
                     <div class="card bg-primary border-white">
                         <img class="card-img-top" src="imgs/extraccion.gif" alt="Card image cap">
@@ -114,7 +127,7 @@
                     <div class="card bg-primary">
                         <img class="card-img-top" src="imgs/salmuera.gif" alt="Card image cap">
                         <div class="card-body">
-                            <h4 class="card-title">3. Colo colo</h4>
+                            <h4 class="card-title">3. FALTA NOMBRE</h4>
                             <p class="card-text">
                                 Todo el proceso concluye en 12 y 18 meses, período que se toma para que <strong>la mezcla se filtre lo suficiente como para extraer el carbonato de litio.</strong>
                             </p>
@@ -123,24 +136,11 @@
                 </div>
             </article>
 
-            <article id="segundo" class="py-3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 mx-auto">
-                            <h3 class="text-center">Lorem ipsum dolor sit amet</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend sit amet ante vel iaculis. Nunc viverra vulputate dui, ac egestas est eleifend eu. Duis elit ligula, finibus a mauris sed, semper varius
-                                magna. Suspendisse a luctus nunc. Duis eget euismod est. Cras bibendum, diam et iaculis condimentum, erat metus laoreet arcu, vel porttitor leo massa eu ipsum. Class aptent taciti sociosqu ad litora torquent
-                                per conubia nostra, per inceptos himenaeos. Integer nec vehicula quam. Aliquam tincidunt risus ut dolor scelerisque imperdiet. In tincidunt aliquam mauris, sed elementum nunc sodales et.
-                            </p>
-                        </div>
-                        <div class="col-12 mx-auto my-4">
-                            <img src="https://picsum.photos/800/200" class="w-100" alt="..." />
 
             <!-- Grafico Reserva -->
             <article id="mapa" class="container mb-5">
-                <div class="mapa-wrap">
-                    <div class="mapa-inner">
+                <div class="row">
+                    <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
                         <h4>Reservas mundiales de Litio</h4>
                         <h5 >(Servicio Geológico de los Estados Unidos – USGS, 2016)</h5>
                         <p class="mb-3">
@@ -148,8 +148,7 @@
                             procesamiento, avances y permisos socioambientales completos que les permite actualmente tener una producción sostenida.</i>
                         </p>    
                         <div class="chart-container" style="height:300; width:300">
-                            <canvas id="myChart"></canvas>
-                          
+                            <canvas id="myChart"></canvas> 
                         </div>
                         <script>
                         var ctx = document.getElementById('myChart').getContext('2d');
@@ -173,8 +172,7 @@
                                         'rgba(146, 143, 183, 1)',
                                         'rgba(169, 248, 251, 1)',
                                         'rgba(244, 194, 96, 1)',
-                                        'rgba(244, 159, 96, 1)',
-                                        
+                                        'rgba(244, 159, 96, 1)',  
                                     ],
                                 }]
                             },
@@ -193,25 +191,11 @@
                 </div>
             </article>
 
-            <article id="tercero" class="py-3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 mx-auto">
-                            <h3 class="text-center">Lorem ipsum dolor sit amet</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend sit amet ante vel iaculis. Nunc viverra vulputate dui, ac egestas est eleifend eu. Duis elit ligula, finibus a mauris sed, semper varius
-                                magna. Suspendisse a luctus nunc. Duis eget euismod est. Cras bibendum, diam et iaculis condimentum, erat metus laoreet arcu, vel porttitor leo massa eu ipsum. Class aptent taciti sociosqu ad litora torquent
-                                per conubia nostra, per inceptos himenaeos. Integer nec vehicula quam. Aliquam tincidunt risus ut dolor scelerisque imperdiet. In tincidunt aliquam mauris, sed elementum nunc sodales et.
-                            </p>
-                        </div>
-                        <div class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 mx-auto my-3">
-                            <img src="https://picsum.photos/400/400" class="w-100" alt="..." />
-
 
             <!-- Grafico precio -->
             <article id="mapa" class="container mb-5">
-                <div class="mapa-wrap">
-                    <div class="mapa-inner">
+                <div class="row">
+                    <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
                         <h4>Precio del Litio</h4>
                         <h5 >(<a href="https://www.metalary.com/">metalary.com</a>)</h5>
                         <p class="mb-3">
@@ -242,8 +226,7 @@
                                         'rgba(146, 143, 183, 0.9)',
                                         'rgba(146, 143, 183, 0.9)',
                                         'rgba(146, 143, 183, 0.9)',
-                                        'rgba(146, 143, 183, 0.9)',
-                                        
+                                        'rgba(146, 143, 183, 0.9)', 
                                     ],
                                 }]
                             },
@@ -284,20 +267,14 @@
             </article>
         </main>
 
-	<div id="mapid" style="width: 100vw; height: 100vh;"></div>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-        <script>
-            var mymap = L.map("mapid").setView([-25.14442, -68.8199], 8);
-            L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw", {
-                maxZoom: 20,
-                // si no les gusta satellite-v9, prueben satellite-streets-v11, outdoors-v11, dark-v10 o light-v10.
-                id: "mapbox/satellite-v9",
-                tileSize: 512,
-                zoomOffset: -1,
-            }).addTo(mymap);
-        </script>
-			    
+        <article id="mapa" class="container">
+            <div class="">
+                <div class="">
+                    
+                </div>
+            </div>
+        </article>
+  
         <!-- se PUEDE complementar con un aside -->
 
         <aside class="py-5">
@@ -356,8 +333,17 @@
         </footer>
         <!-- …HASTA ACÁ, Y PÉGALO DENTRO DEL BODY DE TU HTML -->
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
+        
+        <script>
+            var mymap = L.map("mapid").setView([-25.14442, -68.8199], 8);
+            L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw", {
+                maxZoom: 20,
+                // si no les gusta satellite-v9, prueben satellite-streets-v11, outdoors-v11, dark-v10 o light-v10.
+                id: "mapbox/light-v10",
+                tileSize: 512,
+                zoomOffset: -1,
+            }).addTo(mymap);
+        </script>
     </body>
 </html>
