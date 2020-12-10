@@ -1,14 +1,71 @@
-header#titulo {
-    min-height: 100vh;
-    background-color: var(--mar);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center top;
-    background-size: 100% auto;
-    background-image: url("imgs/hero-shot.png");
-    /* Uso una imagen cuadrada para pantallas más angosta*/
+    
+.bg-primary {
+    background-color:#fef3c7!important;
 }
+
+
+/* Header */
 
 body {
     text-align: center;
+    font-family: 'Roboto Slab', serif;
+    background-color: #fef3c7;
+    color: #1f2937;
+
+}
+
+header.titulo {
+    background-image: url("imgs/hero-shot.png");
+    background-size: 100% auto;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-weight: 800;
+}
+h2 {
+    font-weight: 400;
+}
+h4 {
+    font-weight: 600;
+}
+h5 {
+    font-weight: 300;
+}
+
+header .texto{
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    top: 13rem;
+}
+@media (min-width: 768px) {
+    header .texto{
+        top: 18rem;
+    }
+}
+@media (min-width: 992px) {
+    header .texto{
+        top: 24rem;
+    }
+}
+@media (min-width: 1200px) {
+    header .texto{
+        top: 34rem;
+    }
+}
+
+/* main  */
+main {
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+}
+main h3{
+    text-align: left;
+}
+
+main .card {
+    border: none;
 }
