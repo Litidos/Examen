@@ -208,7 +208,6 @@
                 </div>
             </article>
 
-
             <!-- Surgimiento de movimientos sociales -->
             <article id="problemaMedioAmbiental" class="container mt-5">
                 <div class="row justify-content-md-center">
@@ -236,10 +235,10 @@
                 <div class="row justify-content-md-left">
                     <div class="col-9 col-sm-8 col-md-7 col-lg-6 col-xl-5">
                         <div class="sticky-top">
-                            <img src="imgs/constitucion_1.png" id="constitucion1" class="img-fluid sticky-top" />
-                            <img src="imgs/constitucion_2.png" id="constitucion2" class="img-fluid sticky-top hide" />
-                            <img src="imgs/constitucion_3.png" id="constitucion3" class="img-fluid sticky-top hide" />
-                            <img src="imgs/constitucion_4.png" id="constitucion4" class="img-fluid sticky-top hide" />
+                            <img src="imgs/constitucion_1.png" alt="Ilustración de la constitucion de Chile cerrada" id="constitucion1" class="img-fluid sticky-top" />
+                            <img src="imgs/constitucion_2.png" alt="Ilustración de la constitucion de Chile abierta, ART. 19 escrito" id="constitucion2" class="img-fluid sticky-top hide" />
+                            <img src="imgs/constitucion_3.png" alt="Ilustración de la constitucion de Chile abierta, nacionalización tachado en rojo" id="constitucion3" class="img-fluid sticky-top hide" />
+                            <img src="imgs/constitucion_4.png" alt="Ilustración de la nueva constitucion de Chile cerrada" id="constitucion4" class="img-fluid sticky-top hide" />
                         </div>
                     </div>
                     <div class="col-10 col-sm-9 col-md-8 col-lg-7 col-xl-6" id="constitucion">
@@ -667,26 +666,27 @@
 
         <!-- Esto solo funciona en una de las ilustraciones -->
         <script>
-            $('.comunidad').ready(function() {
+            $(".comunidad").ready(function () {
                 var popOverSettings2 = {
-                    placement: 'bottom',
-                    selector: '.comunidad',
-                    title:'Pueblos Atacameños',
+                    placement: "bottom",
+                    selector: ".comunidad",
+                    title: "Pueblos Atacameños",
                     trigger: "hover",
-                    content:'El pueblo atacameño vive en la cuenca de Atacama y ha sido testigo del deterioro medioambiental que se ha provocado dentro del territorio con la instalación de distintas empresas.'
+                    content: "El pueblo atacameño vive en la cuenca de Atacama y ha sido testigo del deterioro medioambiental que se ha provocado dentro del territorio con la instalación de distintas empresas.",
                 };
-                
-            $(this).popover(popOverSettings2);
+
+                $(this).popover(popOverSettings2);
             });
-            $('.flamencos').ready(function() {
+            $(".flamencos").ready(function () {
                 var popOverSettings = {
-                    placement: 'bottom',
-                    selector: '.flamencos',
-                    title:'Aves nativas',
+                    placement: "bottom",
+                    selector: ".flamencos",
+                    title: "Aves nativas",
                     trigger: "hover",
-                    content:'En las lagunas del Salar de Atacama habitan tres especies de flamencos: el andino, el Chileno y el James. El primero Vulnerable y los otros dos Casi Amenazados según la categorización de la Unión Internacional para la Conservación de la Naturaleza.'
+                    content:
+                        "En las lagunas del Salar de Atacama habitan tres especies de flamencos: el andino, el Chileno y el James. El primero Vulnerable y los otros dos Casi Amenazados según la categorización de la Unión Internacional para la Conservación de la Naturaleza.",
                 };
-            $(this).popover(popOverSettings);
+                $(this).popover(popOverSettings);
             });
         </script>
 

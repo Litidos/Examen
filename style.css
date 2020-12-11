@@ -108,7 +108,6 @@ header .texto {
     #problemaConstitucionalScroll {
         display: none;
     }
-    
 }
 @media (min-width: 1200px) {
     header .texto {
@@ -117,7 +116,7 @@ header .texto {
     #problemaConstitucionalScroll {
         display: block;
     }
-    #problemaConstitucionalCarrusel{
+    #problemaConstitucionalCarrusel {
         display: none;
     }
 }
@@ -142,8 +141,6 @@ main h3 {
 .hide {
     display: none;
 }
-
-
 
 .carousel-caption {
     position: relative;
