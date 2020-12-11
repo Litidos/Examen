@@ -1,7 +1,7 @@
 html,
 body {
     min-height: 100%;
-    color: #000;
+    color: #1f2937;
     background-color: #fef3c7;
     background-position: center bottom;
     background-size: 100% auto;
@@ -24,10 +24,9 @@ a {
     color: #928fb7;
 }
 
-
 header#titular {
     min-height: 80vh;
-    background-color:#fef3c7;
+    background-color: #fef3c7;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center bottom;
@@ -40,20 +39,19 @@ header#titular div.container {
     height: 80vh; /*  Misma altura que el header */
 }
 
-p{
+p {
     text-align: justify;
 }
-    
+
 .bg-primary {
-    background-color:#fef3c7!important;
+    background-color: #fef3c7 !important;
 }
 
 body {
     text-align: center;
-    font-family: 'Roboto Slab', serif;
+    font-family: "Roboto Slab", serif;
     background-color: #fef3c7;
     color: #1f2937;
-
 }
 
 header.titulo {
@@ -76,25 +74,46 @@ h5 {
     font-weight: 300;
 }
 
-header .texto{
+header .texto {
     width: 100%;
     max-width: 100%;
     position: relative;
     top: 13rem;
 }
+
+#problemaConstitucionalScroll {
+    display: none;
+}
 @media (min-width: 768px) {
-    header .texto{
+    header .texto {
         top: 18rem;
+    }
+    #problemaConstitucionalScroll {
+        display: none;
+    }
+}
+@media (min-width: 820px) {
+    header .texto {
+        top: 24rem;
+    }
+    #problemaConstitucionalScroll {
+        display: none;
     }
 }
 @media (min-width: 992px) {
-    header .texto{
+    header .texto {
         top: 24rem;
+    }
+    #problemaConstitucionalScroll {
+        display: none;
     }
 }
 @media (min-width: 1200px) {
-    header .texto{
+    header .texto {
         top: 34rem;
+    }
+    #problemaConstitucionalScroll {
+        display: block;
     }
 }
 
@@ -103,7 +122,7 @@ main {
     max-width: 100%;
     text-align: left;
 }
-main h3{
+main h3 {
     text-align: left;
 }
 
@@ -111,10 +130,45 @@ main h3{
     border: none;
 }
 
-#problemaConstitucional .pastillas {
+#problemaConstitucionalScroll .pastillas {
     padding-top: 300px;
 }
 
 .hide {
     display: none;
+}
+
+#mapaid {
+    width: 100vw;
+    height: 90vh;
+}
+
+.carousel-caption {
+    position: relative;
+    left: 0;
+    top: 0;
+    color: #1f2937;
+}
+
+.carousel-indicators li {
+    background-color: #1f2937;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+}
+
+.carousel-control-next-icon:after {
+    content: ">";
+    font-size: 40px;
+    color: #1f2937;
+    margin-left: 4rem;
+}
+
+.carousel-control-prev-icon:after {
+    content: "<";
+    font-size: 40px;
+    color: #1f2937;
+    margin-left: -8rem;
 }
