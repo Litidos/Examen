@@ -22,6 +22,9 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: #fef3c7;
 }
+a {
+    color: #928fb7;
+  }
 
 
 header#titular {
@@ -110,6 +113,14 @@ main h3{
     text-align: left;
 }
 
-main .card {
+.card {
     border: none;
+}
+
+#problemaConstitucional .pastillas {
+    padding-top: 300px;
+}
+
+.hide {
+    display: none;
 }
