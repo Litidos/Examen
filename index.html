@@ -33,7 +33,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
-                            <p class="lead mb-n2">
+                            <p class="lead mb-n3">
                                 Durante los últimos años, el litio ha ganado una gran importancia dentro de la explotación de minerales debido a su masivo uso. Si bien Chile es uno de los principales productores, la extracción de este ha
                                 generado varias situaciones y problemas, que han llevado a la discusión acerca de la legislación en el tema. El proceso constituyente actual además lo pone en la palestra, llevando a cuestionarse si es
                                 posible legislar sobre el tema a favor del país y del medioambiente.
@@ -419,6 +419,13 @@
                             fontSize: 15,
                         },
                     },
+                    tooltips: {
+                        callbacks: {
+                            label: function(tooltipItem, data) {
+                            return data['labels'][tooltipItem['index']] + ': ' + data['datasets'][0]['data'][tooltipItem['index']] + '%';
+                            }
+                        }
+                    }
                 },
             });
         </script>
