@@ -35,13 +35,9 @@
                     <div class="row">
                         <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
                             <p class="lead">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend sit amet ante vel iaculis. Nunc viverra vulputate dui, ac egestas est eleifend eu. Duis elit ligula, finibus a mauris sed, semper varius
-                                magna. Suspendisse a luctus nunc.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend sit amet ante vel iaculis. Nunc viverra vulputate dui, ac egestas est eleifend eu. Duis elit ligula, finibus a mauris sed, semper varius
-                                magna. Suspendisse a luctus nunc. Duis eget euismod est. Cras bibendum, diam et iaculis condimentum, erat metus laoreet arcu, vel porttitor leo massa eu ipsum. Class aptent taciti sociosqu ad litora torquent
-                                per conubia nostra, per inceptos himenaeos. Integer nec vehicula quam. Aliquam tincidunt risus ut dolor scelerisque imperdiet. In tincidunt aliquam mauris, sed elementum nunc sodales et.
+                                Durante los últimos años, el litio ha ganado una gran importancia dentro de la explotación de minerales debido a su masivo uso. Si bien Chile es uno de los principales productores,
+                                 la extracción de este ha generado varias situaciones y problemas,  que han llevado a la discusión acerca de la legislación en el tema. El proceso constituyente actual además lo 
+                                 pone en la palestra, llevando a cuestionarse si es posible legislar sobre el tema a favor del país y del medioambiente.
                             </p>
                         </div>
                         <div class="col-12 mx-auto my-4">
@@ -57,7 +53,8 @@
                         <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
                             <h3 class="titulo">¿Qué es el Litio?</h3>
                             <p class="contenido ">
-                                Es un <strong>metal</strong> que se encuentra principalmente en <strong>salmueras naturales, pegmatitas, pozos petrolíferos, campos geotermales y agua de mar.</strong> En Chile el litio es un mineral estratégico y de interés nacional, <strong>cuya propiedad es exclusiva del Estado</strong>, según lo establecido en el decreto Nº2886 del año 1979.
+                                Es un <strong>metal</strong> que se encuentra principalmente en <strong>salmueras naturales, pegmatitas, pozos petrolíferos, campos geotermales y agua de mar.</strong>
+                                 En Chile el litio es un mineral estratégico y de interés nacional, <strong>cuya propiedad es exclusiva del Estado</strong>, según lo establecido en el decreto Nº2886 del año 1979.
                             </p>
                         </div>
                     </div>
@@ -98,11 +95,9 @@
             </article>
 
             <!-- tarjetas -->
-            
             <article id="tarjetas-extracion" class="container my-5">
                 <h3 class="titulo">¿Cómo se extrae?</h3>
                 <div class="card-group tarjetas ">
-                    
                     <!-- Tarjeta 1 -->
                     <div class="card bg-primary border-white">
                         <img class="card-img-top" src="imgs/extraccion.gif" alt="Card image cap">
@@ -127,7 +122,7 @@
                     <div class="card bg-primary">
                         <img class="card-img-top" src="imgs/salmuera.gif" alt="Card image cap">
                         <div class="card-body">
-                            <h4 class="card-title">3. FALTA NOMBRE</h4>
+                            <h4 class="card-title">3. Refinado</h4>
                             <p class="card-text">
                                 Todo el proceso concluye en 12 y 18 meses, período que se toma para que <strong>la mezcla se filtre lo suficiente como para extraer el carbonato de litio.</strong>
                             </p>
@@ -150,43 +145,6 @@
                         <div class="chart-container" style="height:300; width:300">
                             <canvas id="myChart"></canvas> 
                         </div>
-                        <script>
-                        var ctx = document.getElementById('myChart').getContext('2d');
-                        var chart = new Chart(ctx, {
-                            type: 'doughnut',
-                            data: {
-                                labels: ['Chile', 'China', 'Argentina', 'Australia', 'Otros'],
-                                datasets: [{
-                                    label: 'Reservas',
-                                    data: [52, 22, 14, 11, 1],
-                                    backgroundColor: [
-                                        'rgba(247, 108, 94, 0.9)',
-                                        'rgba(146, 143, 183, 0.9)',
-                                        'rgba(169, 248, 251, 0.9)',
-                                        'rgba(244, 194, 96, 0.9)',
-                                        'rgba(244, 159, 96, 0.9)',
-                                        
-                                    ],
-                                    borderColor: [
-                                        'rgba(247, 108, 94, 1)',
-                                        'rgba(146, 143, 183, 1)',
-                                        'rgba(169, 248, 251, 1)',
-                                        'rgba(244, 194, 96, 1)',
-                                        'rgba(244, 159, 96, 1)',  
-                                    ],
-                                }]
-                            },
-                            options: {
-                                legend: {
-                                    display: true,
-                                    labels: {
-                                        fontColor: "#1f2937",
-                                        fontSize: 15
-                                    }
-                                }
-                            }
-                        });
-                        </script>
                     </div>
                 </div>
             </article>
@@ -204,64 +162,7 @@
                         </p>    
                         <div class="chart-container" style="height:300; width:300">
                             <canvas id="myChart2"></canvas>
-
                         </div>
-                        <script>
-                        var ctx = document.getElementById('myChart2').getContext('2d');
-                        var chart = new Chart(ctx, {
-                            type: 'bar',
-                            data: {
-                                labels: ['2008', '2009', '2010', '2011','2012', '2013', '2014', '2015', '2016', '2017', '2018'],
-                                datasets: [{
-                                    label: 'Dólares por tonelada métrica',
-                                    data: [4440, 4530, 4350, 3870, 4220, 4390, 5050, 6500, 7475, 9100, 16500],
-                                    backgroundColor: [
-                                        'rgba(146, 143, 183, 0.9)',
-                                        'rgba(146, 143, 183, 0.9)',
-                                        'rgba(146, 143, 183, 0.9)',
-                                        'rgba(146, 143, 183, 0.9)',
-                                        'rgba(146, 143, 183, 0.9)',
-                                        'rgba(146, 143, 183, 0.9)',
-                                        'rgba(146, 143, 183, 0.9)',
-                                        'rgba(146, 143, 183, 0.9)',
-                                        'rgba(146, 143, 183, 0.9)',
-                                        'rgba(146, 143, 183, 0.9)',
-                                        'rgba(146, 143, 183, 0.9)', 
-                                    ],
-                                }]
-                            },
-                            options: {
-                                legend: {
-                                    display: true,
-                                    labels: {
-                                        fontColor: "#1f2937",
-                                        fontSize: 15
-                                    }
-                                },
-                                scales: {
-                                    xAxes: [{
-                                        ticks: {
-                                            fontColor: "#1f2937",
-                                        },
-
-                                    }],
-                                    yAxes: [{
-                                        ticks: {
-                                            fontColor: "#1f2937",
-                                            callback: function(value) {
-                                                return "$" + Number(value).toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                                            }
-                                        }
-                                    }]
-                                }, 
-                                tooltips: {
-                                    callbacks: {
-                                        label: function (tooltipItem, data) { return data.datasets[tooltipItem.datasetIndex].label + " - " + "$" + Number(tooltipItem.yLabel).toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");}
-                                    }
-			                    }
-                            }
-                        });
-                        </script>
                     </div>
                 </div>
             </article>
@@ -269,14 +170,13 @@
 
         <article id="mapa" class="container">
             <div class="">
-                <div class="">
-                    
+                <div class=""> 
                 </div>
             </div>
         </article>
   
-        <!-- se PUEDE complementar con un aside -->
 
+        <!-- se PUEDE complementar con un aside -->
         <aside class="py-5">
             <div class="container">
                 <div class="row">
@@ -334,16 +234,233 @@
         <!-- …HASTA ACÁ, Y PÉGALO DENTRO DEL BODY DE TU HTML -->
 
 
-        
-        <script>
-            var mymap = L.map("mapid").setView([-25.14442, -68.8199], 8);
-            L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw", {
-                maxZoom: 20,
-                // si no les gusta satellite-v9, prueben satellite-streets-v11, outdoors-v11, dark-v10 o light-v10.
-                id: "mapbox/light-v10",
-                tileSize: 512,
-                zoomOffset: -1,
-            }).addTo(mymap);
+    <!-- Grafico Dona -->
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Chile', 'China', 'Argentina', 'Australia', 'Otros'],
+                datasets: [{
+                    label: 'Reservas',
+                    data: [52, 22, 14, 11, 1],
+                    backgroundColor: [
+                        'rgba(247, 108, 94, 0.9)',
+                        'rgba(146, 143, 183, 0.9)',
+                        'rgba(169, 248, 251, 0.9)',
+                        'rgba(244, 194, 96, 0.9)',
+                        'rgba(244, 159, 96, 0.9)',
+                        
+                    ],
+                    borderColor: [
+                        'rgba(247, 108, 94, 1)',
+                        'rgba(146, 143, 183, 1)',
+                        'rgba(169, 248, 251, 1)',
+                        'rgba(244, 194, 96, 1)',
+                        'rgba(244, 159, 96, 1)',  
+                    ],
+                }]
+            },
+            options: {
+                legend: {
+                    display: true,
+                    labels: {
+                        fontColor: "#1f2937",
+                        fontSize: 15
+                    }
+                }
+            }
+        });
         </script>
+
+        <!-- Grafico Barra -->
+        <script>
+            var ctx = document.getElementById('myChart2').getContext('2d');
+            var chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['2008', '2009', '2010', '2011','2012', '2013', '2014', '2015', '2016', '2017', '2018'],
+                    datasets: [{
+                        label: 'Dólares por tonelada métrica',
+                        data: [4440, 4530, 4350, 3870, 4220, 4390, 5050, 6500, 7475, 9100, 16500],
+                        backgroundColor: [
+                            'rgba(146, 143, 183, 0.9)',
+                            'rgba(146, 143, 183, 0.9)',
+                            'rgba(146, 143, 183, 0.9)',
+                            'rgba(146, 143, 183, 0.9)',
+                            'rgba(146, 143, 183, 0.9)',
+                            'rgba(146, 143, 183, 0.9)',
+                            'rgba(146, 143, 183, 0.9)',
+                            'rgba(146, 143, 183, 0.9)',
+                            'rgba(146, 143, 183, 0.9)',
+                            'rgba(146, 143, 183, 0.9)',
+                            'rgba(146, 143, 183, 0.9)', 
+                        ],
+                    }]
+                },
+                options: {
+                    legend: {
+                        display: true,
+                        labels: {
+                            fontColor: "#1f2937",
+                            fontSize: 15
+                        }
+                    },
+                    scales: {
+                        xAxes: [{
+                            ticks: {
+                                fontColor: "#1f2937",
+                            },
+
+                        }],
+                        yAxes: [{
+                            ticks: {
+                                fontColor: "#1f2937",
+                                callback: function(value) {
+                                    return "$" + Number(value).toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                                }
+                            }
+                        }]
+                    }, 
+                    tooltips: {
+                        callbacks: {
+                            label: function (tooltipItem, data) { return data.datasets[tooltipItem.datasetIndex].label + " - " + "$" + Number(tooltipItem.yLabel).toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");}
+                        }
+                    }
+                }
+            });
+            </script>
+        
+        <!-- Mapa -->
+        <script>
+            /* Potencial extracion */
+            var salarIsla = L.polygon([
+                [-25.64468410864405, -68.66027859206916],
+                [-25.70595012548384, -68.69323757742082],
+                [-25.76594787346081, -68.69804409611793],
+                [-25.802426527225652, -68.69529751400529],
+                [-25.86484697449377, -68.68431118555475],
+                [-25.853107028767063, -68.64036587175254],
+                [-25.77645982255418, -68.58406093844344],
+                [-25.68429402177896, -68.55796840837337],
+                [-25.66944184635149, -68.60878017745718],
+                [-25.645303114707655, -68.63555935305541]],{
+                opacity: 0.6}
+            ).bindPopup("Salar de Isla Negra").setStyle({fillColor: '#157A6E', color: "#157A6E" }),
+            salarPajonales = L.polygon([
+                [-25.09092252184078, -68.84355797552816],
+                [-25.14563315593374, -68.87308373323903],
+                [-25.179193457362924, -68.8717104421827],
+                [-25.200319278256867, -68.84355797552816],
+                [-25.22578965836613, -68.82364525521153],
+                [-25.238833397694265, -68.77283348612772],
+                [-25.23448564007492, -68.71584190729048],
+                [-25.15122718071299, -68.7412477918324],
+                [-25.10211532557988, -68.795492788557],
+                [-25.093409900058894, -68.8174654454581]],{
+                opacity: 0.6}
+            ).bindPopup("Salar de Pajonales").setStyle({fillColor: '#157A6E', color: "#157A6E" }),
+            salarAguasCalientes = L.polygon([
+                [-23.09972963634879, -67.41325838243287],
+                [-23.114782984693335, -67.42676065877777],
+                [-23.129646509748195, -67.42676065877777],
+                [-23.14300346260238, -67.42348737966387],
+                [-23.15240896888884, -67.41591792171293],
+                [-23.149775493666564, -67.40323396514653],
+                [-23.139805440111203, -67.39689198686331],
+                [-23.119674959508398, -67.4060980843712],
+                [-23.104622159656422, -67.4060980843712],
+                [-23.101046871693693, -67.41059884315283]],{
+                opacity: 0.6}
+            ).bindPopup("Salar de Aguas Calientes").setStyle({fillColor: '#157A6E', color: "#157A6E" });
+
+            /* Codelco */
+            var salarPedernales = L.polygon([
+                [-26.09259120402348, -69.06690831560321],
+                [-26.16302104282874, -69.23205763598405],
+                [-26.260564032008823, -69.2595825227142],
+                [-26.365423919455285, -69.21003772659995],
+                [-26.488666803085994, -69.11232437870795],
+                [-26.546545397392666, -68.99809609877788],
+                [-26.42459694567032, -68.89487777353985],
+                [-26.304986862863696, -68.95405628000964],
+                [-26.198837459058087, -69.05314587223815],
+                [-26.09011921073801, -69.03112596285405]],{
+                opacity: 0.6}
+            ).bindPopup("Salar de Pedernales").setStyle({fillColor: '#f76c5e', color: "#f76c5e" }),
+            salarMarincunga = L.polygon([
+                [-26.830724084966405, -69.05929539945342],
+                [-26.893952703539608, -69.13361259362479],
+                [-26.926474038869948, -69.14875128132637],
+                [-27.025820732634877, -69.13774132663431],
+                [-26.99762009295398, -69.06273601029469],
+                [-26.925246988794374, -69.02764177971376],
+                [-26.85712479571533, -69.04002797874232]],{
+                opacity: 0.6}
+            ).bindPopup("Salar de Marincunga").setStyle({fillColor: '#f76c5e', color: "#f76c5e" });
+
+            /* Corfo */
+            var salarAtacama = L.polygon([
+                [-22.87975562399263, -68.30765699899631],
+                [-23.06610816244283, -68.49881284107975],
+                [-23.309396707963476, -68.54935986827766],
+                [-23.52220218881796, -68.47096974851073],
+                [-23.65989295281296, -68.34685205887976],
+                [-23.756891849803317, -68.2913862572611],
+                [-23.770539157372614, -68.20966934928765],
+                [-23.59106563355678, -68.04309034478293],
+                [-23.549153051289622, -68.03655783480235],
+                [-23.255391728713523, -67.99736277491888],
+                [-23.00307976782415, -68.06268787472465]],{
+                opacity: 1,}
+            ).bindPopup("Salar de Atacama").setStyle({fillColor: '#928fb7', color: "#928fb7" });
+
+            /* Empresas privadas */
+            var sqm = L.marker([-23.549440927070457, -68.35982268463572]).bindPopup('SQM'),
+                albemarle    = L.marker([-23.64338494432992, -68.32295516745019]).bindPopup('Albemarle'),
+                salarBlanco    = L.marker([-26.947527313909404, -69.03680660612648]).bindPopup('Minera salar blanco');
+            
+            var potExtracion = L.layerGroup([salarIsla, salarPajonales, salarAguasCalientes]);
+            var codelco = L.layerGroup([salarPedernales, salarMarincunga]);
+            var empresasPrivadas = L.layerGroup([sqm, salarBlanco, albemarle]);
+            var corfo = L.layerGroup([salarAtacama]);
+
+
+
+            var blancoNegro = L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw", {
+                                maxZoom: 20,
+                                id: "mapbox/light-v10",
+                                tileSize: 512,
+                                zoomOffset: -1,
+                                }),
+                satelite = L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw", {
+                                maxZoom: 20,
+                                id: "mapbox/satellite-v9",
+                                tileSize: 512,
+                                zoomOffset: -1,
+                                });
+
+            var mymap = L.map("mapid", {
+                layers: [blancoNegro, potExtracion, codelco, empresasPrivadas, corfo]
+            }).setView([-25.14442, -68.8199], 8);
+
+
+
+            var baseMaps = {
+                "Blanco y negro": blancoNegro,
+                "Satelite": satelite,
+            };
+
+            var overlayMaps = {
+                "Potencial de Extracción": potExtracion,
+                "Codelco": codelco,
+                "Corfo": corfo,
+                "Empresas Privadas": empresasPrivadas
+            };
+
+
+            L.control.layers(baseMaps, overlayMaps).addTo(mymap);           
+        </script>
+
     </body>
 </html>
