@@ -4,6 +4,9 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
         <link href="style.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet"> 
@@ -15,6 +18,7 @@
     </head>
 
     <body>
+        <!-- Titular -->
         <header id="titular">
             <div class="container">
                 <div class="row h-100">
@@ -30,25 +34,25 @@
     
         <!--Cuerpo-->
         <main role="main">
-            <article id="primero" class="py-3">
+            <article id="intro" class="mt-0">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
-                            <p class="lead">
+                            <p class="lead mb-n2">
                                 Durante los últimos años, el litio ha ganado una gran importancia dentro de la explotación de minerales debido a su masivo uso. Si bien Chile es uno de los principales productores,
                                  la extracción de este ha generado varias situaciones y problemas,  que han llevado a la discusión acerca de la legislación en el tema. El proceso constituyente actual además lo 
                                  pone en la palestra, llevando a cuestionarse si es posible legislar sobre el tema a favor del país y del medioambiente.
                             </p>
                         </div>
-                        <div class="col-12 mx-auto my-4">
-                            <img src="https://picsum.photos/800/300" class="w-100" alt="..." />
+                        <div class="col-12 mx-auto my-n3">
+                            <img src="imgs/litio_salar_atacama_transparente.png" class="w-100" alt="..." />
                         </div> 
                     </div>    
                 </div>
             </article>     
 
             <!-- Que es -->
-            <article id="que_es" class="container">
+            <article id="que_es" class="container mt-2">
                     <div class="row justify-content-md-center que-es-wrap">
                         <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
                             <h3 class="titulo">¿Qué es el Litio?</h3>
@@ -61,7 +65,7 @@
             </article>
 
             <!-- para que sirve -->
-            <article id="para-que" class="container mt-5">
+            <article id="para-que" class="container mt-4">
                 <div class="row justify-content-md-center para-que-wrap">
                     <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
                         <h3 class="titulo">¿Para qué se usa?</h3>
@@ -76,56 +80,65 @@
                 </div>
             </article>
             
-            <!-- mapa -->
-            <!-- <article id="mapa" class="container my-5">
-                <div class="row justify-content-md-center mapa-wrap">
-                    <div class="col-md-auto mapa-inner">
-                        <img src="imgs/Mapa Salares.png" alt="mapa del norte de Chile" class="img-fluid">
-                    </div>
-                </div>
-            </article> -->
 
             <!-- mapa -->
             <article id="mapa" class="my-5" >
                 <div class="container">
                     <div class="row justify-content-md-center">
-                        <div id="mapid" class="col-md-auto" style="width: 100vw; height: 100vh;"></div>
+                        <div id="mapid" class="col-md-auto" style="width: 50vw; height: 90vh;"></div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Expliación mapa -->
+            <article id="expliacionMapa" class="container mt-5 mb-4">
+                <div class="row justify-content-md-center para-que-wrap">
+                    <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
+                        <p class="contenido ">
+                            El litio está bajo el control de tres instituciones estatales: La Corporación de Fomento de la  Producción (CORFO), la Corporación del Cobre (CODELCO) y la 
+                            Empresa nacional de Minería (ENAMI). Estas instituciones entregan directamente contratos especiales de operación de litio (CEOL) para la extracción de 
+                            determinadas cantidades en un período determinado de tiempo a empresas privadas.
+                        </p>
                     </div>
                 </div>
             </article>
 
             <!-- tarjetas -->
             <article id="tarjetas-extracion" class="container my-5">
-                <h3 class="titulo">¿Cómo se extrae?</h3>
-                <div class="card-group tarjetas ">
-                    <!-- Tarjeta 1 -->
-                    <div class="card bg-primary border-white">
-                        <img class="card-img-top" src="imgs/extraccion.gif" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title">1. Extracción</h4>
-                            <p class="card-text">
-                                Todo comienza con <strong>la perforación de un agujero en la superficie</strong> y, luego, se procede al <strong>bombeo de la salmuera.</strong>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Tarjeta 2 -->
-                    <div class="card bg-primary">
-                        <img class="card-img-top" src="imgs/salmuera.gif" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title">2. Salmuera</h4>
-                            <p class="card-text">
-                                Se <strong>deja evaporar durante meses</strong>, para que de esa manera, se forme una mezcla de manganeso, potasio, bórax que se filtren y se colocan a evaporar.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Tarjeta 3 -->
-                    <div class="card bg-primary">
-                        <img class="card-img-top" src="imgs/salmuera.gif" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title">3. Refinado</h4>
-                            <p class="card-text">
-                                Todo el proceso concluye en 12 y 18 meses, período que se toma para que <strong>la mezcla se filtre lo suficiente como para extraer el carbonato de litio.</strong>
-                            </p>
+                <div class="row justify-content-md-center para-que-wrap">
+                    <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
+                        <h3 class="titulo mb-4">¿Cómo se extrae?</h3>
+                        <div class="card-group  tarjetas ">
+                            <!-- Tarjeta 1 -->
+                            <div class="card bg-primary border-white">
+                                <img class="card-img-top" src="imgs/extraccion.gif" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">1. Extracción</h4>
+                                    <p class="card-text">
+                                        Todo comienza con <strong>la perforación de un agujero en la superficie</strong> y, luego, se procede al <strong>bombeo de la salmuera.</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 2 -->
+                            <div class="card bg-primary">
+                                <img class="card-img-top" src="imgs/salmuera.gif" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">2. Salmuera</h4>
+                                    <p class="card-text">
+                                        Se <strong>deja evaporar durante meses</strong>, para que de esa manera, se forme una mezcla de manganeso, potasio, bórax que se filtren y se colocan a evaporar.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Tarjeta 3 -->
+                            <div class="card bg-primary">
+                                <img class="card-img-top" src="imgs/salmuera.gif" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">3. Refinado</h4>
+                                    <p class="card-text">
+                                        Todo el proceso concluye en 12 y 18 meses, período que se toma para que <strong>la mezcla se filtre lo suficiente como para extraer el carbonato de litio.</strong>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -133,7 +146,7 @@
 
 
             <!-- Grafico Reserva -->
-            <article id="mapa" class="container mb-5">
+            <article id="mapa" class="container mt-4 mb-5">
                 <div class="row">
                     <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
                         <h4>Reservas mundiales de Litio</h4>
@@ -149,6 +162,20 @@
                 </div>
             </article>
 
+             <!-- Explicación mapa -->
+             <article id="expliacionMapa" class="container my-5 mb-3">
+                <div class="row justify-content-md-center para-que-wrap">
+                    <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
+                        <p class="contenido ">
+                            Solo Chile posee el 52% aprox. de reservas de litio del mundo en forma de salmueras. 
+                            Además, el carbonato de litio es el producto con mayor volumen de transacción comercial, siendo el compuesto más importante. Su mercado está en constante crecimiento,
+                             y se estima que crezca entre 10% y 12% anualmente dentro de los próximos cinco años. La demanda de baterías lo mantiene dinámico debido a su fuerte uso y fabricación en esa área.
+                            En el resto de nuestro continente, Bolivia y Argentina también poseen reservas para este recurso. De los 10 millones de toneladas métricas de reservas conocidas de litio que 
+                            existen en el planeta, cerca de nueve millones son de ambos países con Chile.
+                        </p>
+                    </div>
+                </div>
+            </article>
 
             <!-- Grafico precio -->
             <article id="mapa" class="container mb-5">
@@ -166,15 +193,43 @@
                     </div>
                 </div>
             </article>
-        </main>
 
-        <article id="mapa" class="container">
-            <div class="">
-                <div class=""> 
+            <article id="intro" class="mt-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 mx-auto my-n3">
+                            <img src="imgs/litio_para_chile_transparente.png" class="w-100" alt="..." />
+                        </div> 
+                    </div>    
                 </div>
-            </div>
-        </article>
-  
+            </article> 
+
+            <!-- Problema Mediambiental -->
+            <article id="problemaMedioAmbiental" class="container mt-2">
+                <div class="row justify-content-md-center">
+                    <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
+                        <h3 class="titulo">Problema Medioambiental</h3>
+                        <p class="contenido ">
+                            El <strong>Salar de Atacama</strong> ya está explotado por otras actividades del rubro, y se hace necesario explotar más acuíferos y salares para satisfacer la creciente demanda. 
+                            Muchos de estos territorios de donde se extrae el litio se encuentran en <strong>terrenos indígenas</strong> (atacameños o lickanantay, colla, quechua y aymara), además de que se
+                            teme que impacten en <strong>zonas protegidas</strong> como Laguna Tebenquiche o los salares de Maricunga y Coipasa.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Imagenes -->
+            <article id="problemaMedioAmbiental" class="container mt-2">
+                <div class="row justify-content-md-center">
+                    <div class="col-10 col-sm-9 col-md-8 col-lg-7 col-xl-6 mx-auto flamencos">
+                      <img src="imgs/flamenco.png" class="img-fluid" alt="Ilustración de flamenco">
+                    </div>
+                    <div class="col-10 col-sm-9 col-md-8 col-lg-7 col-xl-6 mx-auto comunidad">
+                      <img src="imgs/pueblos_atacameños.png" class="img-fluid" alt="Ilustración comunidad Atacameños">
+                    </div>
+                  </div> 
+            </article>
+        </main>
 
         <!-- se PUEDE complementar con un aside -->
         <aside class="py-5">
@@ -442,7 +497,7 @@
 
             var mymap = L.map("mapid", {
                 layers: [blancoNegro, potExtracion, codelco, empresasPrivadas, corfo]
-            }).setView([-25.14442, -68.8199], 8);
+            }).setView([-24.990285633915786, -68.81268107181641], 8);
 
 
 
@@ -461,6 +516,29 @@
 
             L.control.layers(baseMaps, overlayMaps).addTo(mymap);           
         </script>
-
+        <script>
+            $('document').ready(function() {
+                var popOverSettings = {
+                    placement: 'bottom',
+                    selector: '.flamencos',
+                    title:'Aves nativas',
+                    trigger: "hover",
+                    content:'En las lagunas del Salar de Atacama habitan tres especies de flamencos: el andino, el Chileno y el James. El primero Vulnerable y los otros dos Casi Amenazados según la categorización de la Unión Internacional para la Conservación de la Naturaleza.'
+                };
+            $(this).popover(popOverSettings);
+            });
+        </script>
+        <script>
+            $('document').ready(function() {
+                var popOverSettings2 = {
+                    placement: 'bottom',
+                    selector: '.flamencos',
+                    title:'Pueblos Atacameños',
+                    trigger: "hover",
+                    content:'El pueblo atacameño vive en la cuenca de Atacama y ha sido testigo del deterioro medioambiental que se ha provocado dentro del territorio con la instalación de distintas empresas.'
+                };
+            $(this).popover(popOverSettings2);
+            });
+        </script>
     </body>
 </html>
